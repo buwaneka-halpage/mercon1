@@ -14,7 +14,9 @@ import { ThemeToggle } from "@/components/theme-toggle"
 export default function Home() {
   return (
     
-    <div className="w-full h-[100vh] overflow-auto flex items-center justify-center">
+    <div>
+      <ThemeToggle />
+      <div className="w-full h-[100vh] overflow-auto flex items-center justify-center">
       
       <Terminal>
       <TypingAnimation>&gt;  Initializing MERCon 2026...</TypingAnimation>
@@ -45,6 +47,7 @@ export default function Home() {
         Redirecting to homepage...
       </TypingAnimation>
     </Terminal>
+    </div>
     </div>
     
   );
